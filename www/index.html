@@ -47,9 +47,7 @@
     <script type="text/javascript">
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() { 
-navigator.camera.getPicture(onSuccess, onFail, { quality: 25,
-    destinationType: Camera.DestinationType.DATA_URL
-});
+navigator.device.capture.captureImage(onSuccess, onFail, { limit: 3 });
 
 function onSuccess(imageData) {
     var image = document.getElementById('myImage');
