@@ -48,10 +48,8 @@
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() { 
             navigator.camera.getPicture(onSuccess, onFail, {
-                            quality: 50,
-                            destinationType: Camera.DestinationType.FILE_URI,
-                            correctOrientation: true,
-                            allowEdit: true
+                             quality: 50,
+    destinationType: Camera.DestinationType.FILE_URI
                           });
 
 function onSuccess(imageURI) {
