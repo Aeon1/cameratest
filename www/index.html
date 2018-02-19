@@ -47,13 +47,16 @@
     <script type="text/javascript">
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() { 
-navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-    destinationType: Camera.DestinationType.DATA_URL
-});
+navigator.camera.getPicture(onSuccess, onFail, {
+                            quality: 50,
+                            destinationType: Camera.DestinationType.FILE_URI,
+                            correctOrientation: true,
+                            allowEdit: true
+                          });
 
 function onSuccess(imageData) {
     var image = document.getElementById('myImage');
-    image.src = "data:image/jpeg;base64," + imageData;
+    image.src = imageData;
 }
 
 function onFail(message) {
