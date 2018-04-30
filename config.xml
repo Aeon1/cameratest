@@ -12,9 +12,9 @@
     <plugin name="cordova-plugin-camera" spec="4.0.2" />
     <plugin name="cordova-plugin-file" spec="4.3.3" />
 
-    <access origin="*" />
+    <access origin="*" launch-external="yes" />
     <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
+    <allow-intent href="https://*/*" />	
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
