@@ -13,8 +13,8 @@
     <plugin name="cordova-plugin-file" spec="4.3.3" />
 
     <access origin="*" launch-external="yes" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />	
+    <allow-intent href="http://code.jquery.com/*" />
+    <allow-intent href="https://code.jquery.com/" />	
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
